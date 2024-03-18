@@ -39,3 +39,15 @@ export const categories = [
         isLarge: false,
     }
 ]
+
+export const getData = async (path) => {
+    try{
+        
+        let URI = DNS + path
+        let result = await fetch(URI)
+        return result.json()    
+
+    } catch (error){
+        console.log(error)
+    }
+}
