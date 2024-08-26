@@ -45,7 +45,7 @@ function Banner() {
         >
             <div className='banner-content'>
                 <h1 className='banner-title'>
-                    { movie?.title || movie?.ñame || movie?.original_name }
+                    { movie?.title || movie?.name || movie?.original_name }
                 </h1>
                 <div className='banner-button-container'>
                     <div className='banner-button'>
